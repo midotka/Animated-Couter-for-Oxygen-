@@ -1,7 +1,7 @@
+// count only once
 var doCount = true;
 
 function lnum(){
-
   jQuery('.num-text').each(function () {
     jQuery(this).prop('Counter',0).animate({
         Counter: jQuery(this).text()
@@ -16,6 +16,7 @@ function lnum(){
   
 }
 
+// count only if it is in view
 jQuery(window).scroll(function() {
     var top_of_element = jQuery(".number-section").offset().top;
     var bottom_of_element = jQuery(".number-section").offset().top + jQuery(".number-section").outerHeight();
